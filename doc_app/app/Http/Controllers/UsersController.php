@@ -33,7 +33,7 @@ class UsersController extends Controller
             foreach($doctor as $info) {
                 if($data['doc_id'] == $info['id']) {
                     $data['doctor_name'] = $info['name'];
-                    $data['doctor_profile'] = $info['profile_photo_path'];
+                    $data['doctor_profile'] = $info['profile_photo_url'];
                     if(isset($appointment) && $appointment['doc_id'] == $info['id']) {
                         $data['appointments'] = $appointment;
                     }
