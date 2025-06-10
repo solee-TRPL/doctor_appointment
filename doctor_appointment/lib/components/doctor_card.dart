@@ -26,7 +26,7 @@ class DoctorCard extends StatelessWidget {
           child: Row(
             children: [
               SizedBox(
-                width: Config.widthSize * 0.30,
+                width: Config.widthSize * 0.33,
                 child: Image.network(
                   "http://127.0.0.1:8000${doctor['doctor_profile']}",
                   fit: BoxFit.fill,
